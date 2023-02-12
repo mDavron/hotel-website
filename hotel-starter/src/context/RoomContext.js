@@ -6,7 +6,8 @@ export const RoomContext = createContext();
 
 const RoomProvider = ({ children }) => {
   const [rooms, setRooms] = useState(roomData);
-  // console.log(rooms);
+  const [total, setTotal] = useState(0);
+  console.log(total);
   return (
     <RoomContext.Provider value={{ rooms }}>{children}</RoomContext.Provider>
   );
