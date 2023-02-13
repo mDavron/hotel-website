@@ -15,7 +15,12 @@ const Header = () => {
         header ? "bg-white py-6 shadow-lg" : "bg-transparent py-8"
       } fixed z-50 w-full transition-all duration-300`}
     >
-      Header
+      <div className="container mx-auto">
+        {/* logo */}
+        <a href="/">
+          {header ? <img src={LogoDark} /> : <img src={LogoWhite} />}
+        </a>
+      </div>
     </header>
   );
 };
