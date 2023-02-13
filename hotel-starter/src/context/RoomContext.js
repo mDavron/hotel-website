@@ -1,5 +1,4 @@
 import React, { createContext, useEffect, useState } from "react";
-import { useFetcher } from "react-router-dom";
 // data
 import { roomData } from "../data";
 // create context
